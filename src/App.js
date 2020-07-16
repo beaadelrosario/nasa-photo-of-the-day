@@ -4,6 +4,11 @@ import "./App.css";
 import ImageOTD from "./components/Body/ImageOTD"
 import Header from "./components/Header/Header"
 // import header from "./components/Header/Header"
+import styled from "styled-components"
+
+const StyledDetails = styled.div`
+    margin: 1%;
+`
 const apiKey = "qWBm0JTrgkmxNrlTEWDwktfUoG6GeQJLfvzo3Jvt"
 
 function App() {
@@ -27,10 +32,10 @@ function App() {
       })
   },[]) 
   return (
-    <div className="App">
+    <StyledDetails className="App">
       <Header />
       <ImageOTD imageOTD={imageOTD}/>
-    </div>
+    </StyledDetails>
   );
 }
 
