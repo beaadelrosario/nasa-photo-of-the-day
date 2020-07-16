@@ -1,11 +1,12 @@
 import React from "react";
-// import logo192 from "../Header/logo192.png"
-export default function ImageOTD ({imageOTD}){
+import nasaLogo from "./NASAlogo-removebg-preview.png"
+
+export default function Header (){
 
 return (
     <div className="header-container">
-        {/* <img src={logo192} alt="logo"/> */}
-        <h1>NASA Photo of the Day</h1>
+        <img src={nasaLogo} alt="logo"/>
+        <h1>IMAGE OF THE DAY</h1>
     </div>
 )
 }
