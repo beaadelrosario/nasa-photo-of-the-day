@@ -1,13 +1,15 @@
 import React from "react";
 
-export default function ImageOTD ({imageOTD}){
+export default function ImageOTD ({imageOTD,date,title,description}){
 
 return (
     <div className="imageContainer">
         <img src={imageOTD} alt="Random Picto"/>
-        <p>
-        Image infor goes here <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+        <div className="description-block">
+            <p>DATE: {date}</p>
+            <p>TITLE: {title}</p>
+            <p>ABOUT: {description}</p>
+        </div>
     </div>
 )
 }
